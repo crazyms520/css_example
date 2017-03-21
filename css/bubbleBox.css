@@ -1,0 +1,61 @@
+/* line 1, ../sass/bubbleBox.scss */
+.balloon {
+  width: 20%;
+  margin-top: 20px;
+}
+
+/* line 5, ../sass/bubbleBox.scss */
+.balloon-default {
+  background: #666;
+  border-radius: 4px;
+  color: black;
+  padding: 10px;
+  position: relative;
+}
+
+/* line 12, ../sass/bubbleBox.scss */
+.balloon-default::after {
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-top: solid 10px #666;
+  bottom: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+
+/* line 26, ../sass/bubbleBox.scss */
+.balloon-multi {
+  background: #fff;
+  border: solid 1px #6cf;
+  border-radius: 4px;
+  color: #333;
+  padding: 10px;
+  position: relative;
+}
+
+/* line 34, ../sass/bubbleBox.scss */
+.balloon-multi::before,
+.balloon-multi::after {
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-top: solid 10px #6cf;
+  bottom: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+
+/* line 48, ../sass/bubbleBox.scss */
+.balloon-multi::after {
+  border-top-color: #fff;
+  bottom: -8px;
+}
