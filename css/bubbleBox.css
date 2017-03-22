@@ -12,9 +12,8 @@
   padding: 10px;
   position: relative;
 }
-
-/* line 12, ../sass/bubbleBox.scss */
-.balloon-default::after {
+/* line 11, ../sass/bubbleBox.scss */
+.balloon-default:after {
   border-left: solid 7px transparent;
   border-right: solid 7px transparent;
   border-top: solid 10px #666;
@@ -28,7 +27,76 @@
   width: 0;
 }
 
-/* line 26, ../sass/bubbleBox.scss */
+/* line 25, ../sass/bubbleBox.scss */
+.balloon-top {
+  background: #666;
+  border-radius: 4px;
+  color: black;
+  padding: 10px;
+  position: relative;
+}
+/* line 31, ../sass/bubbleBox.scss */
+.balloon-top:before {
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 10px #666;
+  top: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+
+/* line 45, ../sass/bubbleBox.scss */
+.balloon-right {
+  background: #666;
+  border-radius: 4px;
+  color: black;
+  padding: 10px;
+  position: relative;
+}
+/* line 51, ../sass/bubbleBox.scss */
+.balloon-right:after {
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+  border-left: solid 10px #666;
+  right: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  top: 40%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+
+/* line 65, ../sass/bubbleBox.scss */
+.balloon-left {
+  background: #666;
+  border-radius: 4px;
+  color: black;
+  padding: 10px;
+  position: relative;
+}
+/* line 71, ../sass/bubbleBox.scss */
+.balloon-left:after {
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+  border-right: solid 10px #666;
+  left: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  top: 40%;
+  margin-left: 0;
+  position: absolute;
+  width: 0;
+}
+
+/* line 86, ../sass/bubbleBox.scss */
 .balloon-multi {
   background: #fff;
   border: solid 1px #6cf;
@@ -37,10 +105,8 @@
   padding: 10px;
   position: relative;
 }
-
-/* line 34, ../sass/bubbleBox.scss */
-.balloon-multi::before,
-.balloon-multi::after {
+/* line 93, ../sass/bubbleBox.scss */
+.balloon-multi:before, .balloon-multi:after {
   border-left: solid 7px transparent;
   border-right: solid 7px transparent;
   border-top: solid 10px #6cf;
@@ -53,9 +119,94 @@
   position: absolute;
   width: 0;
 }
-
-/* line 48, ../sass/bubbleBox.scss */
-.balloon-multi::after {
+/* line 106, ../sass/bubbleBox.scss */
+.balloon-multi:after {
   border-top-color: #fff;
   bottom: -8px;
+}
+
+/* line 113, ../sass/bubbleBox.scss */
+.balloon-multi-top {
+  background: #fff;
+  border: solid 1px #6cf;
+  border-radius: 4px;
+  color: #333;
+  padding: 10px;
+  position: relative;
+}
+/* line 120, ../sass/bubbleBox.scss */
+.balloon-multi-top:before, .balloon-multi-top:after {
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+  border-bottom: solid 10px #6cf;
+  top: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+/* line 133, ../sass/bubbleBox.scss */
+.balloon-multi-top:after {
+  border-bottom-color: #fff;
+  top: -8px;
+}
+
+/* line 140, ../sass/bubbleBox.scss */
+.balloon-multi-right {
+  background: #fff;
+  border: solid 1px #6cf;
+  border-radius: 4px;
+  color: #333;
+  padding: 10px;
+  position: relative;
+}
+/* line 147, ../sass/bubbleBox.scss */
+.balloon-multi-right:before, .balloon-multi-right:after {
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+  border-left: solid 10px #6cf;
+  right: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  top: 40%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+/* line 160, ../sass/bubbleBox.scss */
+.balloon-multi-right:after {
+  border-left-color: #fff;
+  right: -8px;
+}
+
+/* line 167, ../sass/bubbleBox.scss */
+.balloon-multi-left {
+  background: #fff;
+  border: solid 1px #6cf;
+  border-radius: 4px;
+  color: #333;
+  padding: 10px;
+  position: relative;
+}
+/* line 174, ../sass/bubbleBox.scss */
+.balloon-multi-left:before, .balloon-multi-left:after {
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+  border-right: solid 10px #6cf;
+  left: -10px;
+  content: '';
+  display: block;
+  height: 0;
+  top: 40%;
+  position: absolute;
+  width: 0;
+}
+/* line 187, ../sass/bubbleBox.scss */
+.balloon-multi-left:after {
+  border-right-color: #fff;
+  left: -8px;
 }

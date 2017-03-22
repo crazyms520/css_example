@@ -8,19 +8,79 @@
     color: black;
     padding: 10px;
     position: relative;
+    &:after{
+        border-left: solid 7px transparent;
+        border-right: solid 7px transparent;
+        border-top: solid 10px #666;
+        bottom: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
 }
-.balloon-default::after{
-    border-left: solid 7px transparent;
-    border-right: solid 7px transparent;
-    border-top: solid 10px #666;
-    bottom: -10px;
-    content: '';
-    display: block;
-    height: 0;
-    left: 50%;
-    margin-left: -5px;
-    position: absolute;
-    width: 0;
+.balloon-top{
+    background: #666;
+    border-radius: 4px;
+    color: black;
+    padding: 10px;
+    position: relative;
+    &:before{
+        border-left: solid 7px transparent;
+        border-right: solid 7px transparent;
+        border-bottom: solid 10px #666;
+        top: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
+}
+.balloon-right{
+    background: #666;
+    border-radius: 4px;
+    color: black;
+    padding: 10px;
+    position: relative;
+    &:after{
+        border-top: solid 7px transparent;
+        border-bottom: solid 7px transparent;
+        border-left: solid 10px #666;
+        right: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        top: 40%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
+}
+.balloon-left{
+    background: #666;
+    border-radius: 4px;
+    color: black;
+    padding: 10px;
+    position: relative;
+    &:after{
+        border-top: solid 7px transparent;
+        border-bottom: solid 7px transparent;
+        border-right: solid 10px #666;
+        left: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        top: 40%;
+        margin-left: 0;
+        position: absolute;
+        width: 0;
+    }
 }
 
 .balloon-multi{
@@ -30,22 +90,103 @@
     color: #333;
     padding:10px;
     position: relative;
+    &:before,&:after{
+        border-left: solid 7px transparent;
+        border-right: solid 7px transparent;
+        border-top: solid 10px #6cf;
+        bottom: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
+    &:after
+    {
+        border-top-color: #fff;
+        bottom: -8px;
+    }
 }
-.balloon-multi::before,
-.balloon-multi::after{
-    border-left: solid 7px transparent;
-    border-right: solid 7px transparent;
-    border-top: solid 10px #6cf;
-    bottom: -10px;
-    content: '';
-    display: block;
-    height: 0;
-    left: 50%;
-    margin-left: -5px;
-    position: absolute;
-    width: 0;
+
+.balloon-multi-top{
+    background: #fff;
+    border: solid 1px #6cf;
+    border-radius: 4px;
+    color: #333;
+    padding:10px;
+    position: relative;
+    &:before,&:after{
+        border-left: solid 7px transparent;
+        border-right: solid 7px transparent;
+        border-bottom: solid 10px #6cf;
+        top: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
+    &:after
+    {
+        border-bottom-color: #fff;
+        top: -8px;
+    }
 }
-.balloon-multi::after{
-    border-top-color: #fff;
-    bottom: -8px;
+
+.balloon-multi-right{
+    background: #fff;
+    border: solid 1px #6cf;
+    border-radius: 4px;
+    color: #333;
+    padding:10px;
+    position: relative;
+    &:before,&:after{
+        border-top: solid 7px transparent;
+        border-bottom: solid 7px transparent;
+        border-left: solid 10px #6cf;
+        right: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        top:40%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
+    &:after
+    {
+        border-left-color: #fff;
+        right: -8px;
+    }
+}
+
+.balloon-multi-left{
+    background: #fff;
+    border: solid 1px #6cf;
+    border-radius: 4px;
+    color: #333;
+    padding:10px;
+    position: relative;
+    &:before,&:after{
+        border-top: solid 7px transparent;
+        border-bottom: solid 7px transparent;
+        border-right: solid 10px #6cf;
+        left: -10px;
+        content: '';
+        display: block;
+        height: 0;
+        top:40%;
+        // margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
+    &:after
+    {
+        border-right-color: #fff;
+        left: -8px;
+    }
 }
